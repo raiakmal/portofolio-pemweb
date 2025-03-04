@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Ray</div>
+      <ul class="nav-links">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Portofolio</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>MUHAMMAD RAI</h1>
+        <h2>AKMAL</h2>
+        <div class="title-wrapper">
+          <p>SOFTWARE ENGINEER</p>
+        </div>
+        <button>HUBUNGI SAYA</button>
+      </div>
+      <div class="hero-image">
+        <img src="assets/foto.png" alt="Foto-Saya" />
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Portofolio Section -->
+    <section class="portfolio">
+      <h2>Portofolio</h2>
+      <p>Proyek yang Mengubah Ide Menjadi Solusi</p>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/porto/porto1.png" alt="Portofolio-1" />
+            <div class="overlay">
+              <a href="https://raiakmal.github.io/calculearn/" target="_blank"><button>Lihat Project</button></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="icons">
+              <i class="ri-html5-fill html-icon"></i>
+              <i class="ri-css3-fill css-icon"></i>
+              <i class="ri-javascript-fill javascript-icon"></i>
+              <i class="ri-bootstrap-fill bootstrap-icon"></i>
+            </div>
+            <div class="card-title">Website Pembelajaran</div>
+            <p class="card-text">
+                Sebuah platform pembelajaran interaktif yang dirancang untuk memudahkan siswa dalam memahami materi pelajaran dengan lebih efektif dan menyenangkan.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/porto/porto2.png" alt="Portofolio-2" />
+            <div class="overlay">
+              <a href="https://sundariofficial.netlify.app/" target="_blank"><button>Lihat Project</button></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="icons">
+              <i class="ri-html5-fill html-icon"></i>
+              <i class="ri-css3-fill css-icon"></i>
+              <i class="ri-javascript-fill javascript-icon"></i>
+              <i class="ri-tailwind-css-fill tailwind-icon"></i>
+            </div>
+            <div class="card-title">Landing Page</div>
+            <p class="card-text">
+                Sebuah halaman arahan yang dirancang untuk menarik perhatian pengguna dan meningkatkan konversi melalui desain yang menarik dan konten yang relevan.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/porto/porto3.png" alt="Portofolio-3" />
+            <div class="overlay">
+              <a href="https://eduhealth.netlify.app/" target="_blank"><button>Lihat Project</button></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="icons">
+              <i class="ri-html5-fill html-icon"></i>
+              <i class="ri-css3-fill css-icon"></i>
+              <i class="ri-javascript-fill javascript-icon"></i>
+              <i class="ri-tailwind-css-fill tailwind-icon"></i>
+            </div>
+            <div class="card-title">3D Website Anatomi Tubuh</div>
+            <p class="card-text">
+                Sebuah situs web interaktif yang menampilkan anatomi tubuh manusia dalam bentuk 3D, memungkinkan pengguna untuk mempelajari struktur tubuh dengan cara yang lebih menarik dan mendalam.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/porto/porto4.png" alt="Portofolio-4" />
+            <div class="overlay">
+              <a href="https://perpustakaan-anak.vercel.app/" target="_blank"><button>Lihat Project</button></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="icons">
+              <i class="ri-tailwind-css-fill tailwind-icon"></i>
+              <i class="ri-nextjs-fill"></i>
+            </div>
+            <div class="card-title">Web Manajemen Perpustakaan</div>
+            <p class="card-text">
+                Sistem manajemen perpustakaan yang modern dan efisien, membantu
+                dalam pengelolaan koleksi buku, peminjaman, dan pengembalian
+                dengan mudah dan cepat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portofolio Section -->
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <div>
+        <h2 class="judul">Skills</h2>
+        <p class="desc-judul">Kemampuan yang Menghidupkan Proyek Digital</p>
+      </div>
+      <div class="skills-container">
+        <div class="row">
+          <div class="skill">UI/UX Design</div>
+          <div class="skill">CMS Development</div>
+        </div>
+        <div class="row">
+          <div class="skill">Web Development</div>
+          <div class="skill">Devops</div>
+        </div>
+        <div class="row">
+          <div class="skill">Network Administrator</div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Tools Section -->
+    <div class="tools-container">
+      <i class="ri-tailwind-css-fill"></i>
+      <i class="ri-nextjs-fill"></i>
+      <i class="ri-github-fill"></i>
+      <i class="ri-router-fill"></i>
+    </div>
+    <!-- End Tools Section -->
+
+    <!-- About Section -->
+    <section class="about">
+      <div>
+        <h2 class="judul">Tentang Saya</h2>
+        <p class="desc-judul">Kemampuan yang Menghidupkan Proyek Digital</p>
+      </div>
+      <div class="container">
+        <div class="item">
+          <p>
+            <span class="bold">Seorang &lt;profesional /&gt;</span>,
+            menghadirkan solusi digital yang intuitif, efisien, dan scalable;
+          </p>
+        </div>
+        <div class="item">
+          <p>
+            Dengan keahlian dalam
+            <span class="bold">&lt;membangun /&gt;</span> sistem dan
+            <span class="bold">&lt;mengoptimalkan /&gt;</span> infrastruktur,
+            saya siap membantu
+            <span class="bold">&lt;mewujudkan /&gt;</span> proyek yang andal dan
+            berkualitas tinggi;
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Testimoni Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div>
+          <h2 class="judul">Testimoni</h2>
+          <p class="desc-judul">
+            Kepercayaan yang Dibangun, Hasil yang Terbukti
+          </p>
+        </div>
+        <div class="testi-wrapper">
+          <div class="testi-card">
+            <div class="testi-header">
+              <img
+                src="assets/clients/client1.jpg"
+                alt="client-1"
+                class="testi-img"
+              />
+              <div class="testi-info">
+                <h3>Mr. Park Ji Sung</h3>
+                <p>CEO of Sung Park</p>
+              </div>
+            </div>
+            <p class="testi-text">
+                "Saya sangat terkesan dengan hasil kerja Rai. Proyek kami selesai tepat waktu dan hasilnya melebihi ekspektasi. Sangat profesional dan komunikatif."
+            </p>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-header">
+              <img
+                src="assets/clients/client2.jpg"
+                alt="client-2"
+                class="testi-img"
+              />
+              <div class="testi-info">
+                <h3>Mr. Beard Hat</h3>
+                <p>CEO of BH Barbershop</p>
+              </div>
+            </div>
+            <p class="testi-text">
+                "Kerja sama dengan Rai sangat menyenangkan. Dia sangat responsif dan memberikan solusi yang tepat untuk setiap masalah yang kami hadapi. Hasil akhirnya sangat memuaskan."
+            </p>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-header">
+              <img
+                src="assets/clients/client3.jpg"
+                alt="client-3"
+                class="testi-img"
+              />
+              <div class="testi-info">
+                <h3>Mrs. Mae Munah</h3>
+                <p>CEO of Munah Beauty</p>
+              </div>
+            </div>
+            <p class="testi-text">
+                "Rai membantu kami membuat landing page yang sangat efektif untuk penjualan. Desainnya menarik dan fungsional, meningkatkan konversi secara signifikan. Sangat direkomendasikan!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimoni Section -->
+
+    <!-- Contact Section -->
+    <section class="kontak">
+      <div>
+        <h2 class="judul">Kontak</h2>
+        <p class="desc-judul">Mari Terhubung dan Bekerja Sama</p>
+      </div>
+      <form class="form-kontak">
+        <input type="email" placeholder="Masukkan Email Anda" required />
+        <input type="tel" placeholder="Masukkan No. handphone Anda" required />
+        <input type="text" placeholder="Masukkan Nama Anda" required />
+        <textarea placeholder="Masukkan Pesan Anda" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section ray">
+            <h2>Ray</h2>
+            <p>Alamat: Jl. Jalan Yuk</p>
+            <p>No. Telp: +62 855 2377 5830</p>
+            <p>Email: muhammadrai0504@gmail.com</p>
+            <div class="social-icons">
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+              <a href="#"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <div class="footer-section menu">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Portofolio</a></li>
+              <li><a href="#">Tentang</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-section lainnya">
+            <h3>Lainnya</h3>
+            <ul>
+              <li><a href="#">Sertifikat</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section kebijakan">
+            <h3>Kebijakan</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <p>© 2025 Rai Akmal. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JavaScript -->
+     <script src="script.js"></script>
+  </body>
+</html>
