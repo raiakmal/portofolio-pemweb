@@ -263,11 +263,11 @@
         <h2 class="judul">Kontak</h2>
         <p class="desc-judul">Mari Terhubung dan Bekerja Sama</p>
       </div>
-      <form class="form-kontak">
-        <input type="email" placeholder="Masukkan Email Anda" required />
-        <input type="tel" placeholder="Masukkan No. handphone Anda" required />
-        <input type="text" placeholder="Masukkan Nama Anda" required />
-        <textarea placeholder="Masukkan Pesan Anda" required></textarea>
+      <form class="form-kontak" action="kontak.php" method="POST">
+        <input type="email" name="email" placeholder="Masukkan Email Anda" required />
+        <input type="tel" name="phone" placeholder="Masukkan No. handphone Anda" required />
+        <input type="text" name="text" placeholder="Masukkan Nama Anda" required />
+        <textarea name="pesan" placeholder="Masukkan Pesan Anda" required></textarea>
         <button type="submit">Kirim</button>
       </form>
     </section>
